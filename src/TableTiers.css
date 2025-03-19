@@ -1,0 +1,11 @@
+.TierColumnContainer{
+    display: flex;
+    width: 100%;
+}
+@media (max-width : 600px) {
+    .TierColumnContainer{
+        flex-direction: column;
+        overflow-y: auto;
+
+    }
+}

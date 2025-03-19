@@ -1,0 +1,30 @@
+nav {
+    width: 68px;
+    height: 92vh;
+    display: flex;
+    background-color: rgb(1, 23, 49);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarIcon{
+    width: 45px;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.3s;
+}
+.sideBarIcon:hover{
+    scale: 110%;
+}
+.sideBarLink{
+    justify-content: center;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+@media (max-width : 920px){
+
+}

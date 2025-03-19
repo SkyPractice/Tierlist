@@ -1,0 +1,47 @@
+.tierColumn{
+    display: flex;
+    width: 19.5%;
+    border-left: solid;
+    border:none;
+    border-top: none;
+    overflow-y: auto;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-right: 0.5%;
+}
+.tierColumnTitle{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    border-top-width: 3px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 50px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+.tierElement{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: fit-content;
+    line-height: 30px;
+    padding-left: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+.tierColumnCon{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media (max-width : 600px) {
+    .tierColumn{
+        width: 100%;
+    }
+}
