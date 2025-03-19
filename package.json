@@ -1,6 +1,7 @@
 {
   "name": "vite-project",
   "private": true,
+  "proxy": "https://skypractice.xyz:25622/api",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
