@@ -14,8 +14,12 @@ function App() {
   const [currentStats , setCurrentStats] = useState({});
   const [Tiers, setTiers] = useState([]);
   useEffect(()=>{
-     fetch("http://skypractice.xyz:25622/api/").then(res => res.json()).
+     fetch("api/proxy/data", {mode : "no-cors" ,   headers: {
+      'Origin': window.location.origin, // or 'http://yourdomain.com' if you know the origin
+      'X-Requested-With': 'XMLHttpRequest', // This is commonly used for AJAX requests
+    }}).then(res => res.json()).
       then(ress => {
+        console.log(ress)
         if(ress.length > 0){
          setTiers([...ress].sort((a , b) => Object.values(b.Stats).reduce((sum, current) => {
           return sum + (current && current.elo ? current.elo : 0);
@@ -46,25 +50,23 @@ function App() {
 
   return (
     <>
-      <Router>
-      <Header displayStatsFunc = {displayStats}></Header>
-      <div style={{display : "flex"}}>
-        <SideBar></SideBar>
-      <Routes>
-      <Route path='/' element = {<Best tiers = {Tiers} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Sword' element = {<TierTable tiers = {Tiers} mode = {"Sword"} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Nethpot' element = {<TierTable tiers = {Tiers} mode = {"Nethpot"} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Diapot' element = {<TierTable tiers = {Tiers} mode = {"Diapot"} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Uhc' element = {<TierTable tiers = {Tiers} mode = {"Uhc"} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Smp' element = {<TierTable tiers = {Tiers} mode = {"Smp"} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Crystal' element = {<TierTable tiers = {Tiers} mode = {"Crystal"} displayStatsFunc = {displayStats}/>}></Route>
-      <Route path='/Axe' element = {<TierTable tiers = {Tiers} mode = {"Axe"} displayStatsFunc = {displayStats}/>}></Route>
-
-      </Routes>
+     <>
+      <Header displayStatsFunc={displayStats}></Header>
+      <div style={{ display: "flex" }}>
+        <SideBar />
+        <Routes>
+          <Route path="/SkyPractice" element={<Best tiers={Tiers} displayStatsFunc={displayStats} />} />
+          <Route path="/Sword" element={<TierTable tiers={Tiers} mode={"Sword"} displayStatsFunc={displayStats} />} />
+          <Route path="/Nethpot" element={<TierTable tiers={Tiers} mode={"Nethpot"} displayStatsFunc={displayStats} />} />
+          <Route path="/Diapot" element={<TierTable tiers={Tiers} mode={"Diapot"} displayStatsFunc={displayStats} />} />
+          <Route path="/Uhc" element={<TierTable tiers={Tiers} mode={"Uhc"} displayStatsFunc={displayStats} />} />
+          <Route path="/Smp" element={<TierTable tiers={Tiers} mode={"Smp"} displayStatsFunc={displayStats} />} />
+          <Route path="/Crystal" element={<TierTable tiers={Tiers} mode={"Crystal"} displayStatsFunc={displayStats} />} />
+          <Route path="/Axe" element={<TierTable tiers={Tiers} mode={"Axe"} displayStatsFunc={displayStats} />} />
+        </Routes>
       </div>
-      {showTierPreview && <TierPreview Stats = {currentStats} stopstatsfunc = {stopStats}></TierPreview>}
-
-      </Router>
+      {showTierPreview && <TierPreview Stats={currentStats} stopstatsfunc={stopStats}></TierPreview>}
+    </>
     </>
   )
 }

@@ -17,7 +17,7 @@ const Header = (props) => {
 
     return (
         <header>
-            <Link to={'/'} style={{ textDecoration: "none" }}>
+            <Link to={'/SkyPractice'} style={{ textDecoration: "none" }}>
                 <h1 id="title">SKYPRACTICE TIERLIST</h1>
             </Link>
             <form onSubmit={handleSubmit}>

@@ -31,13 +31,13 @@ export default function SideBar(props) {
       }, [location.pathname]);
 
     return <nav>
-        <Link to={'/Sword'} onClick={myClickHandler} className="sideBarLink" style={{border : circleptr == "Sword" ? "solid white" : "none"}}><img className="sideBarIcon" src={SwordLogo}></img></Link>
-        <Link to={'/Diapot'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Diapot" ? "solid white" : "none"}}><img className="sideBarIcon" src={DiapotLogo}></img></Link>
-        <Link to={'/Nethpot'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Nethpot" ? "solid white" : "none"}}><img className="sideBarIcon" src={NethLogo}></img></Link>
-        <Link to={'/Uhc'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Uhc" ? "solid white" : "none"}}><img className="sideBarIcon" src={UhcLogo}></img></Link>
-        <Link to={'/Smp'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Smp" ? "solid white" : "none"}}><img className="sideBarIcon" src={SmpLogo}></img></Link>
-        <Link to={'/Axe'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Axe" ? "solid white" : "none"}}><img className="sideBarIcon" src={AxeLogo}></img></Link>
-        <Link to={'/Crystal'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Crystal" ? "solid white" : "none"}}><img className="sideBarIcon" src={CrystalLogo}></img></Link>
+        <Link to={'/Sword/'} onClick={myClickHandler} className="sideBarLink" style={{border : circleptr == "Sword" ? "solid white" : "none"}}><img className="sideBarIcon" src={SwordLogo}></img></Link>
+        <Link to={'/Diapot/'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Diapot" ? "solid white" : "none"}}><img className="sideBarIcon" src={DiapotLogo}></img></Link>
+        <Link to={'/Nethpot/'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Nethpot" ? "solid white" : "none"}}><img className="sideBarIcon" src={NethLogo}></img></Link>
+        <Link to={'/Uhc/'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Uhc" ? "solid white" : "none"}}><img className="sideBarIcon" src={UhcLogo}></img></Link>
+        <Link to={'/Smp/'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Smp" ? "solid white" : "none"}}><img className="sideBarIcon" src={SmpLogo}></img></Link>
+        <Link to={'/Axe/'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Axe" ? "solid white" : "none"}}><img className="sideBarIcon" src={AxeLogo}></img></Link>
+        <Link to={'/Crystal/'} onClick={myClickHandler} className={"sideBarLink"} style={{border : circleptr == "Crystal" ? "solid white" : "none"}}><img className="sideBarIcon" src={CrystalLogo}></img></Link>
 
     </nav>
 }
