@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'dist', // This is the default, but good to confirm
   },
-  base: '/SkyPractice', // Replace with your repository name
+  base: '/', // Replace with your repository name
 });
