@@ -1,0 +1,18 @@
+.TierColumnContainer{
+    display: flex;
+    width: 100%;
+}
+.notiersav{
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    color: white;
+    font-family: "Geist", sans-serif;
+}
+@media (max-width : 900px) {
+    .TierColumnContainer{
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
+    }
+}

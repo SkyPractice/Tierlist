@@ -1,0 +1,201 @@
+.OverAllTier {
+    width: 97%;
+    height: 100px;
+    background-color: rgba(20, 20, 20, 0.9);
+    margin-top: 15px;
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.OverAllTier:hover{
+    scale: 101%;
+    background-color: rgb(25, 25, 25);
+}
+.OverAllImg {
+    width: 100px;
+    margin-left: 10px;
+}
+.OverAllPlace{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-weight: 1200;
+
+}
+.identityCon{
+    display: flex;
+}
+.OverAllName{
+    margin-top: 10px;
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-weight: 1200;
+    font-size: 25px;
+    width: fit-content;
+}
+.OverAllElo {
+    margin-top: 0px;
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-weight: 1200;
+    font-size: 25px;
+    margin-bottom: 0px;
+    width: fit-content;  
+}
+.OverAllSet {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin-top: 5px;
+    height: 90px;
+    margin-right: 20px;
+    margin-left: auto;
+}
+.OverAllGm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+.OverAllTierWord{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Geist", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.OverAllTierWordCon{
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgb(0, 12, 27);
+    height: 8vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin-top: auto;
+}
+.OverAllGmImg{
+    width: 30px;
+    margin-top: 12px;
+}
+.OverAllRegionCon{
+    border-radius: 13px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overAllRegionGrandCon{
+    display: flex;
+    align-items: center;
+}
+.OverAllRegionTxt{
+    font-family: "Geist", sans-serif;
+    font-size: 23px;
+}
+.OverAllShortRegion{
+    margin:0;
+    margin-top: 10px;
+    font-family: "Geist", sans-serif;
+    font-weight: 1200;
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+.pointspan{
+    color : lightgray; font-size : 25px;
+    margin-left: 10px;
+}
+@media (max-width: 1240px){
+    .OverAllName{
+        font-size: 20px;
+    }
+    .OverAllElo{
+        font-size: 20px;
+    }
+    .pointspan{
+        font-size: 20px;
+    }
+}
+@media (max-width: 920px){
+    .OverAllTier{
+        flex-direction: column;
+        height: fit-content;
+       align-items: center;
+    }
+    .OverAllSet{
+        margin-left: 10px;
+    }
+    .OverAllTierWord{
+        font-size: 20px;
+    }
+
+
+}
+@media (max-width: 600px){
+
+    .OverAllTierWord{
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    .OverAllGm{
+        margin-left: 5px;
+    }
+    .OverAllPlace{
+        font-size: 20px;
+    }
+
+}
+@media (max-width : 460px) {
+    .OverAllSet{
+        align-items: center;
+        height: fit-content;
+    }
+    .OverAllImg{
+        margin-left: 0px;
+    }
+    .OverAllPlace{
+        margin-right: 0px;
+
+    }
+    .OverAllElo{
+        display: flex;
+        flex-direction: column;
+    }
+    .OverAllTierWordCon{
+        width: 30px;
+        height: 30px;
+    }
+    .OverAllTierWord{
+        font-size: 15px;
+    }
+    .OverAllImg{
+        width: 90px;
+        height: 90px;
+    }
+    .pointspan{
+        font-size: 15px;
+    }
+}
+@media (max-width : 380px) {
+    .OverAllRegionCon{
+        width: 35px;
+        height: 35px;
+    }
+    .OverAllRegionTxt{
+        font-size: 17px;
+    }
+}

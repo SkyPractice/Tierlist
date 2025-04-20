@@ -1,0 +1,26 @@
+
+.tierElement{
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-size: 20px;
+    height: fit-content;
+    line-height: 30px;
+    padding-left: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    border-left-style: solid;
+    align-items: center;
+}
+.TableHead{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.tierElement:hover{
+    border-left-width: 10px;
+}
+
+/* Responsive Media Queries Available in TierColumn.css */

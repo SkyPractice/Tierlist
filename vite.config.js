@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'dist', // This is the default, but good to confirm
   },
-  base: '/', // Replace with your repository name
+  base: '/Tierlist', // Replace with your repository name
 });

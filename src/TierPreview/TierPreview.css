@@ -1,0 +1,529 @@
+.blocker {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.9);
+    
+
+}
+.PreviewProfileImg{
+    width: 120px;
+    filter: drop-shadow(-2px 2px 20px rgba(255, 255, 255, 0.3)); /* Initial drop shadow */
+    mask-repeat: no-repeat; /* Ensure the mask doesn't repeat */
+    mask-size: 100% 100%; /* Make the mask cover the entire element */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+}
+.PreviewProfileDetailsCon{
+    margin-left: 40px;
+    display: flex;
+    margin-top: 40px;
+}
+.PreviewPlayerName{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin-left: 20px;
+    color:white;
+}
+.PreviewStatsGridConOverAll{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 850px;
+}
+.PreviewTierStatsGridConOverAll{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 980px;
+}
+.PreviewLogo{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+.PreviewValCon{
+    color:white;
+    margin-left: 20px;
+    width: 180px;
+    height: 150px;
+    background-color: rgba(20, 20, 20, 1);
+    border-color: #efefef;
+    border: solid;
+    border-width: 3px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.PreviewValTitle{
+    font-size: 40px;
+    margin-top: 15px;
+}
+.PreviewTitle{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 42px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    width: fit-content;
+}
+.PreviewTierValCon{
+    width: 230px;
+    height: 200px;
+    margin-left: 20px;
+    padding-left: 20px;
+    background-color:  rgba(20, 20, 20, 1);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid;
+    border-width: 3px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 20px;
+    border-radius: 3px;
+    color: white;
+    margin-top: 20px;
+}
+.PreviewTierValTitle{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    width: 170px;
+}
+.PreviewTierVal{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 32px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+@media (max-width : 1250px) {
+    .PreviewTierStatsGridConOverAll{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 820px;
+    }
+    .PreviewStatsGridConOverAll{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 670px;
+    }
+}
+@media (max-width : 980px) {
+    .PreviewTierStatsGridConOverAll{
+        grid-template-columns: 1fr 1fr;
+        width: 550px;
+    }
+    .PreviewStatsGridConOverAll{
+        grid-template-columns: 1fr 1fr;
+        width: 450px;
+    }
+    .MatchResultImg{
+        width: 50px;
+    }
+    .MatchResultPlayerName{
+        font-size: 20px;
+    }
+    .MatchResultGmImg{
+        width: 50px;
+    }
+    .MatchResultScore{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width : 570px) {
+    .MatchResultImg{
+        width: 40px;
+    }
+    .MatchResultPlayerName{
+        font-size: 17px;
+    }
+    .MatchResultGmImg{
+        width: 40px;
+    }
+    .MatchResultScore{
+        font-size: 17px;
+
+    }
+    .MatchResultCon{
+        height: 50%;
+    }
+    .MatchHistory{
+        height: 90px;
+    }
+}
+@media (max-width : 750px) {
+    .PreviewPlayerName{
+        font-size: 35px;
+        
+    }
+    .PreviewProfileImg{
+        width: 90px;
+        height: 90px;
+    }
+}
+@media (max-width : 650px) {
+    .PreviewTierStatsGridConOverAll{
+        grid-template-columns: 1fr 1fr;
+        width: 550px;
+    }
+    .PreviewStatsGridConOverAll{
+        grid-template-columns: 1fr 1fr;
+        width: 440px;
+    }
+    
+}
+@media (max-width : 550px) {
+    .PreviewTierStatsGridConOverAll{
+        width: 480px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .PreviewStatsGridConOverAll{
+        width: 480px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .PreviewValTitle{
+        font-size: 32px;
+    }
+    .PreviewVal{
+        font-size: 30px;
+    }
+    .PreviewValCon{
+        margin-left: 10px;
+        width: 130px;
+        height: 130px;
+    }
+    .PreviewTierValTitle{
+        font-size: 27px;
+        width: 90px;
+        margin-bottom: 0px;
+        height: 30px;
+    }
+    .PreviewLogo{
+        width: 30px;
+        height: 30px;
+    }
+    .PreviewTierVal{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .PreviewTitle{
+        font-size: 30px;
+    }
+    .PreviewTierValCon{
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+    }
+}
+@media (max-width : 500px) {
+    .PreviewTierStatsGridConOverAll{
+        width: 340px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .PreviewStatsGridConOverAll{
+        width: 340px;
+        grid-template-columns:  1fr 1fr;
+
+    }
+    .MatchResultImg{
+        width: 32px;
+    }
+    .MatchResultPlayerName{
+        font-size: 15px;
+    }
+    .MatchResultGmImg{
+        width: 32px;
+    }
+    .MatchResultScore{
+        font-size: 15px;
+
+    }
+
+    .MatchHistory{
+        height: 90px;
+    }
+}
+@media (max-width : 380px) {
+    .MatchResultImg{
+        width: 30px;
+    }
+    .MatchResultPlayerName{
+        font-size: 14px;
+    }
+    .MatchResultGmImg{
+        width: 30px;
+    }
+    .MatchResultScore{
+        font-size: 14px;
+
+    }
+    .MatchHistory{
+        height: 90px;
+    }
+}
+/*
+.NoMatchesFound{
+    width: 100%;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+}
+.matchResultsTxt{
+    margin: 0px;
+    margin-top: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.statsPreview {
+    background-color: rgb(0, 15, 32);
+    width: 700px;
+    height: 85%;
+    box-shadow: rgba(0, 39, 87, 0.781) 0px 7px 29px 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 50%;
+    padding-bottom: 15px;
+    overflow-y: auto;
+    height: 580px;
+}
+
+.statsImg{
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.statsIgn{
+    color: white;
+    font-style: italic;
+    font-family: "Geist", sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+.statsPerk{
+    color: white;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.statsRegion{
+    color: white;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.StatsPlacement {
+    width: 90%;
+    border: solid;
+    margin-top: 10px;
+    border-radius: 15px;
+    border-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+.placementHighLight{
+    width: 10%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: -2px;
+}
+.placementTxt{
+    margin: 0;
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+    
+}
+.placementword {
+    margin: 0;
+    margin-left: 2px;
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-style: italic;
+
+}
+.previewImg{
+    width: 40px;
+}
+.previewSet{
+    display: flex;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.previewTxtSet{
+    display: flex;
+    margin-top: 4px;
+    background-color: rgb(2, 24, 53);
+    width: fit-content;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.prevpadder{
+    margin-top: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+
+    flex-direction: column;
+}
+.previewTxt{
+    color: white;
+    font-family: "Geist", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.previewImgSet{
+    display: flex;
+}
+.previewTierSet{
+    display: flex;
+    margin-top: 5px;
+}
+.previewWinSet{
+    display: flex;
+}
+.previewLossSet{
+    display: flex;
+}
+.previewEloSet{
+    display: flex;
+}
+.previewVal{
+    color: white;
+    margin: 0;
+    font-family: "Geist", sans-serif;
+    margin-top: 10px;
+}
+.tierpreviewSet{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 9px;
+    border-radius: 40px;
+    background-color: black;
+    padding-top: 10px;
+    height: 95%;
+}
+.statsSet{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(2, 24, 53);
+    height: 100%;
+    padding-top: 10px;
+    border-radius: 40px;
+    padding-bottom: 10px;
+}
+.closeButton{
+    color: lightgray;
+    font-family: "Geist", sans-serif;
+    font-weight: bolder;
+    background-color: rgb(1, 23, 49);
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-right: 0;
+    top:0;
+    right: 0;
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.closeButton:hover{
+    background-color: rgb(3, 39, 83);
+}
+@media (max-width : 600px) {
+    .statsPreview{
+        width: 100%;
+    }
+}
+@media (max-width : 570px) {
+
+    .placementword{
+        font-size: 25px;
+
+    }
+
+}
+@media (max-width : 573px) {
+    .previewVal{
+        font-size: 18px;
+    }
+    .placementword{
+        font-size: 22px;
+
+    }
+    .placementHighLight{
+        width: 15%;
+    }
+    .previewTxt{
+        font-size: 20px;
+    }
+    .previewImg{
+        width: 30px;
+    }
+    .statsIgn{
+        font-size: 25px;
+    }
+    .statsPerk{
+        font-size: 25px;
+    }
+    .statsRegion{
+        font-size: 25px;
+    }
+    .tierpreviewSet{
+        margin-left: 3px;
+    }
+}
+@media (max-width: 420px) {
+    .placementword{
+        font-size: 20px;
+    }
+    .placementword{
+        font-size: 16px;
+    }
+    .previewImg{
+        width: 25px;
+    }
+    .previewVal{
+        font-size: 15px;
+    }
+    .previewTxt{
+        font-size: 15px;
+    }
+
+} */

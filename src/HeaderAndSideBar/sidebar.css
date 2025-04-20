@@ -1,0 +1,114 @@
+nav {
+    width: 64px;
+    height: 92vh;
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarIcon{
+    width: 40px;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.3s;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.9)); /* Initial drop shadow */
+    mask-repeat: no-repeat; /* Ensure the mask doesn't repeat */
+    mask-size: 100% 100%; /* Make the mask cover the entire element */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+}
+.sideBarIcon:hover{
+    scale: 110%;
+}
+.sideBarLink{
+    justify-content: center;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    width: 90%;
+}
+.Selectionptr{
+    text-decoration: none;
+    color: white;
+    font-family: "Geist", sans-serif;
+}
+
+@media (max-width : 2800px) {
+    .sideBarIcon{
+        width: 55px;
+    }
+    .sideBarLink{
+        height: 74px;
+        margin-top: 10px;
+    }
+    nav{
+        width: 80px;
+    }
+}
+
+@media (max-width : 2000px) {
+    .sideBarIcon{
+        width: 50px;
+    }
+    .sideBarLink{
+        height: 74px;
+        margin: 0;
+    }
+    nav{
+        width: 74px;
+    }
+}
+
+@media (max-width : 900px){
+    nav{
+        width: 60px;
+    }
+    .sideBarLink{
+        height: 60px;
+    }
+}
+@media (max-width : 1500px){
+    .sideBarIcon{
+        width: 40px;
+    }
+    .sideBarLink{
+        height: 60px;
+        margin: 0;
+    }
+    nav{
+        width: 64px;
+    }
+}
+
+@media (min-height : 1100px) {
+    .sideBarIcon{
+        width: 5vh;
+    }
+    .sideBarLink{
+        height: 70px;
+        margin-top: 2vh;
+    }
+    nav{
+        width: 6vh;
+    }
+    .Selectionptr{
+        font-size: 1.5vh;
+    }
+}
+@media (min-height : 1500px) {
+    .sideBarIcon{
+        width: 5vh;
+    }
+    .sideBarLink{
+        height: 70px;
+        margin-top: 2.7vh;
+    }
+    .Selectionptr{
+        font-size: 1.5vh;
+    }
+}
