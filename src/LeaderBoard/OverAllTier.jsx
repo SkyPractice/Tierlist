@@ -13,30 +13,30 @@ const OverAllTier = (props) => {
     const [bkcolor , setbkcolor] = useState("");
     const [regionColor , setRegionColor] = useState({background : "lightgray" , txt : "gray"});
     useEffect(()=>{
-        if(props.id == 1){setbordercolor("solid rgb(212, 160, 23)"); setbkcolor("rgba(227, 164, 16, 0.7)")}
-        else if (props.id == 2){setbordercolor("solid silver"); setbkcolor("rgba(192 , 192 , 192 , 0.7)")}
-        else if (props.id == 3){setbordercolor("solid rgb(184, 115, 51)"); setbkcolor("rgba(184, 115, 51, 0.7)")}
+        if(props.id == 1){setbordercolor("var(--first-overall-border)"); setbkcolor("var(--first-overall-bk-color)")}
+        else if (props.id == 2){setbordercolor("var(--second-overall-border)"); setbkcolor("var(--second-overall-bk-color)")}
+        else if (props.id == 3){setbordercolor("var(--third-overall-border)"); setbkcolor("var(--third-overall-bk-color)")}
         if(props.Region){
             if(props.Region == "EU"){
-                setRegionColor({background : "green" , txt : "lightgreen"})
+                setRegionColor({background : "var(--eu-bk-color)" , txt : "var(--eu-txt-color)"})
             }
             else if(props.Region == "NA"){
-                setRegionColor({background : "#442228" , txt : "#d95c6a"})
+                setRegionColor({background : "var(--na-bk-color)" , txt : "var(--na-txt-color)"})
             }
             else if(props.Region == "AS"){
-                setRegionColor({background : "#5e3e49" , txt : "#af7f91"})
+                setRegionColor({background : "var(--as-bk-color)" , txt : "var(--as-txt-color)"})
             }
             else if (props.Region == "SA"){
-                setRegionColor({background : "darkcyan" , txt : "#5dccdc"})
+                setRegionColor({background : "var(--sa-bk-color)" , txt : "var(--sa-txt-color)"})
             }
             else if(props.Region == "ME"){
-                setRegionColor({background : "#4d4525" , txt : "#e5d386"})
+                setRegionColor({background : "var(--me-bk-color)" , txt : "var(--me-txt-color)"})
             }
             else if (props.Region == "AU"){
-                setRegionColor({background : "#392e27" , txt : "#d5ad80"})
+                setRegionColor({background : "var(--au-bk-color)" , txt : "var(--au-txt-color)"})
             }
             else if (props.Region == "AF"){
-                setRegionColor({background : "#5e3e49" , txt : "#af7f91"})
+                setRegionColor({background : "var(--af-bk-color)" , txt : "var(--af-txt-color)"})
             }
         }
     }, [props])

@@ -10,6 +10,7 @@ import SmpLogo from '../assets/Smp.png'
 import AxeLogo from '../assets/Axe.png'
 import CrystalLogo from '../assets/Crystal.png'
 import { MatchHistory } from "./MatchHistory";
+import { getPerk } from "../UseFulFunctions/Functions";
 
 const TierComponent = (props) => {
     return <div className="PreviewTierValCon">
@@ -57,7 +58,10 @@ export default function TierPreview(props) {
         <h1 className="PreviewClose" onClick={e => { props.stopstatsfunc() }}>&#x2716;</h1>
         {inventoryMode ? <Inventories Inven={inventoryGuy}></Inventories> : <><div className="PreviewProfileDetailsCon">
             <img src={"https://mc-heads.net/head/" + myprops.Stats.tier.IGN} className="PreviewProfileImg"></img>
-            <h1 className="PreviewPlayerName">{myprops.Stats.tier.IGN + "'s Profile"}</h1>
+            <div>
+                <h1 className="PreviewPlayerName">{myprops.Stats.tier.IGN + "'s Profile"}</h1>
+                <h2 className="PreviewPlayerPerk">{getPerk(myprops.Stats.tier)}</h2>
+            </div>
         </div>
             <h1 className="PreviewTitle">Total</h1>
             <div className="PreviewStatsGridConOverAll">
@@ -102,11 +106,11 @@ export default function TierPreview(props) {
             </div>
             <h1 className="PreviewTitle">Match History</h1>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                {!matchResults.error && matchResults.map((elm, index) => <MatchHistory key={index} ind={index} ign={myprops.Stats.tier.IGN} playerone={elm.player1}
+                {!matchResults.error ? matchResults.map((elm, index) => <MatchHistory key={index} ind={index} ign={myprops.Stats.tier.IGN} playerone={elm.player1}
                     playertwo={elm.player2} map={elm.map} gm={elm.gamemode ? elm.gamemode : "None"} duration={elm.duration} winner={elm.winner} player1_score={elm.player1_score}
                     player2_score={elm.player2_score} showPlayerInventory={ShowPlayerInventory}>
 
-                </MatchHistory>)}
+                </MatchHistory>) : <h1 className="NoMatches">No Matches Available</h1>}
             </div></>}
     </div>
     {/*<div className="statsPreview" >

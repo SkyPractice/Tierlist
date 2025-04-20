@@ -7,7 +7,10 @@
     height: 60px;
 }
 .EmptyHungerImg{
-    width: 70px;
+    width: 60px;
+    margin-top:6px;
+    margin-left: 3px;
+    
 }
 .hungers{
     display: flex;

@@ -1,0 +1,67 @@
+Date : 2025-04-20 16:11:28
+Directory : c:\skalpha app\Tierlist\src
+Total : 32 files,  1807 codes, 386 comments, 122 blanks, all 2315 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| CSS            |         14 |      1,064 |        263 |         42 |      1,369 |
+| JavaScript JSX |         15 |        730 |        123 |         79 |        932 |
+| JavaScript     |          1 |         11 |          0 |          1 |         12 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                          |         32 |      1,807 |        386 |        122 |      2,315 |
+| . (Files)                                                  |          5 |        122 |         11 |         16 |        149 |
+| HeaderAndSideBar                                           |          4 |        260 |          0 |         16 |        276 |
+| InventoryStage                                             |          6 |        329 |          0 |         26 |        355 |
+| LeaderBoard                                                |          4 |        329 |          1 |         13 |        343 |
+| TierPreview                                                |          4 |        439 |        358 |         24 |        821 |
+| TierTables                                                 |          6 |        245 |          2 |         17 |        264 |
+| UseFulFunctions                                            |          1 |         81 |         14 |         10 |        105 |
+| assets                                                     |          2 |          2 |          0 |          0 |          2 |
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                   | language       | code       | comment    | blank      | total      |
++------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\skalpha app\Tierlist\src\App.css                        | CSS            |          0 |          0 |          1 |          1 |
+| c:\skalpha app\Tierlist\src\App.jsx                        | JavaScript JSX |         82 |          7 |          9 |         98 |
+| c:\skalpha app\Tierlist\src\HeaderAndSideBar\Header.css    | CSS            |         80 |          0 |          2 |         82 |
+| c:\skalpha app\Tierlist\src\HeaderAndSideBar\Header.jsx    | JavaScript JSX |         34 |          0 |          4 |         38 |
+| c:\skalpha app\Tierlist\src\HeaderAndSideBar\sidebar.css   | CSS            |        109 |          0 |          5 |        114 |
+| c:\skalpha app\Tierlist\src\HeaderAndSideBar\sidebar.jsx   | JavaScript JSX |         37 |          0 |          5 |         42 |
+| c:\skalpha app\Tierlist\src\InventoryStage\Heart.css       | CSS            |         13 |          0 |          1 |         14 |
+| c:\skalpha app\Tierlist\src\InventoryStage\Heart.jsx       | JavaScript JSX |         21 |          0 |          4 |         25 |
+| c:\skalpha app\Tierlist\src\InventoryStage\Hunger.css      | CSS            |         15 |          0 |          1 |         16 |
+| c:\skalpha app\Tierlist\src\InventoryStage\Hunger.jsx      | JavaScript JSX |         23 |          0 |          4 |         27 |
+| c:\skalpha app\Tierlist\src\InventoryStage\Inventories.css | CSS            |        187 |          0 |          2 |        189 |
+| c:\skalpha app\Tierlist\src\InventoryStage\Inventories.jsx | JavaScript JSX |         70 |          0 |         14 |         84 |
+| c:\skalpha app\Tierlist\src\LeaderBoard\Best.css           | CSS            |         16 |          0 |          0 |         16 |
+| c:\skalpha app\Tierlist\src\LeaderBoard\Best.jsx           | JavaScript JSX |         31 |          1 |          2 |         34 |
+| c:\skalpha app\Tierlist\src\LeaderBoard\OverAllTier.css    | CSS            |        194 |          0 |          7 |        201 |
+| c:\skalpha app\Tierlist\src\LeaderBoard\OverAllTier.jsx    | JavaScript JSX |         88 |          0 |          4 |         92 |
+| c:\skalpha app\Tierlist\src\TierPreview\MatchHistory.css   | CSS            |         53 |          1 |          3 |         57 |
+| c:\skalpha app\Tierlist\src\TierPreview\MatchHistory.jsx   | JavaScript JSX |         21 |          0 |          2 |         23 |
+| c:\skalpha app\Tierlist\src\TierPreview\TierPreview.css    | CSS            |        259 |        257 |         13 |        529 |
+| c:\skalpha app\Tierlist\src\TierPreview\TierPreview.jsx    | JavaScript JSX |        106 |        100 |          6 |        212 |
+| c:\skalpha app\Tierlist\src\TierTables\TableTiers.css      | CSS            |         18 |          0 |          0 |         18 |
+| c:\skalpha app\Tierlist\src\TierTables\TableTiers.jsx      | JavaScript JSX |         43 |          1 |          1 |         45 |
+| c:\skalpha app\Tierlist\src\TierTables\TierColumn.css      | CSS            |         80 |          0 |          2 |         82 |
+| c:\skalpha app\Tierlist\src\TierTables\TierColumn.jsx      | JavaScript JSX |         30 |          0 |          5 |         35 |
+| c:\skalpha app\Tierlist\src\TierTables\TierElement.css     | CSS            |         23 |          1 |          2 |         26 |
+| c:\skalpha app\Tierlist\src\TierTables\TierElement.jsx     | JavaScript JSX |         51 |          0 |          7 |         58 |
+| c:\skalpha app\Tierlist\src\UseFulFunctions\Functions.jsx  | JavaScript JSX |         81 |         14 |         10 |        105 |
+| c:\skalpha app\Tierlist\src\assets\overall.svg             | XML            |          1 |          0 |          0 |          1 |
+| c:\skalpha app\Tierlist\src\assets\react.svg               | XML            |          1 |          0 |          0 |          1 |
+| c:\skalpha app\Tierlist\src\index.css                      | CSS            |         17 |          4 |          3 |         24 |
+| c:\skalpha app\Tierlist\src\main.jsx                       | JavaScript JSX |         12 |          0 |          2 |         14 |
+| c:\skalpha app\Tierlist\src\setupProxy.js                  | JavaScript     |         11 |          0 |          1 |         12 |
+| Total                                                      |                |      1,807 |        386 |        122 |      2,315 |
++------------------------------------------------------------+----------------+------------+------------+------------+------------+

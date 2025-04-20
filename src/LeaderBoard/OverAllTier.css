@@ -1,7 +1,7 @@
 .OverAllTier {
     width: 97%;
     height: 100px;
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: var(--overall-tier-bk-color);
     margin-top: 15px;
     border-radius: 20px;
     display: flex;
@@ -11,7 +11,7 @@
 
 .OverAllTier:hover{
     scale: 101%;
-    background-color: rgb(25, 25, 25);
+    background-color: var(--overall-tier-bk-hover-color);
 }
 .OverAllImg {
     width: 100px;
@@ -20,7 +20,7 @@
 .OverAllPlace{
     margin-left: 20px;
     margin-top: 20px;
-    color: white;
+    color: var(--main-font-color);
     font-family: "Geist", sans-serif;
     font-weight: 1200;
 
@@ -30,7 +30,7 @@
 }
 .OverAllName{
     margin-top: 10px;
-    color: white;
+    color: var(--main-font-color);
     font-family: "Geist", sans-serif;
     font-weight: 1200;
     font-size: 25px;
@@ -38,7 +38,7 @@
 }
 .OverAllElo {
     margin-top: 0px;
-    color: white;
+    color: var(--main-font-color);
     font-family: "Geist", sans-serif;
     font-weight: 1200;
     font-size: 25px;
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: var(--overall-gm-tier-con-bk-color);
     border-radius: 30px;
     margin-left: 5px;
 }
@@ -69,14 +69,14 @@
     padding: 0;
     font-size: 20px;
     font-family: "Geist", sans-serif;
-    color: white;
+    color: var(--main-font-color);
     font-weight: bold;
 }
 .OverAllTierWordCon{
     margin: 0;
     padding: 0;
     border-radius: 50%;
-    background-color: rgb(0, 12, 27);
+    background-color: var(--overall-gm-tier-bk-color);
     height: 8vh;
     display: flex;
     justify-items: center;

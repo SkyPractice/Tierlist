@@ -48,6 +48,10 @@ function App() {
   const displayStats = (playerName) => {
     // Sets The Stats
     const myindex = Tiers.findIndex(e => e.IGN == playerName);
+    if (myindex == -1) {
+      alert("No Results Found !");
+      return;
+    }
     const mywins = Object.values(Tiers[myindex].Stats).reduce((sum, current) => {
       return sum + (current && current.wins ? current.wins : 0);
     }, 0)
@@ -57,10 +61,7 @@ function App() {
     const myelo = Object.values(Tiers[myindex].Stats).reduce((sum, current) => {
       return sum + (current && current.elo ? current.elo : 0);
     }, 0)
-    if (myindex == -1) {
-      alert("No Results Found !");
-      return;
-    }
+
     // goofy usestate prop thing to trigger changes
     setCurrentStats({ tier: Tiers[myindex], index: myindex, wins: mywins, losses: mylosses, elo: myelo });
     setShowTierPreview(true);

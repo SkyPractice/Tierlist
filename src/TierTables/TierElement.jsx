@@ -6,22 +6,23 @@ export default function TierElement(props) {
   const [regioncolour, setRegionColor] = useState({});
   const [isHovered, setIsHovered] = useState(false); // State to track hover
 
+  // txt aka border left
   useEffect(() => {
-    settiercolor(props.high ? "rgb(22 , 22 , 22)" : "rgb(15 , 15 , 15)");
+    settiercolor(props.high ? "var(--tier-bk-color-ht)" : "var(--tier-bk-color-lt)");
     if (props.Region === "EU") {
-      setRegionColor({ background: "green", txt: "lightgreen" });
+      setRegionColor({ txt: "var(--eu-border-left-color)" });
     } else if (props.Region === "NA") {
-      setRegionColor({ background: "#442228", txt: "#d95c6a" });
+      setRegionColor({ txt: "var(--na-border-left-color)" });
     } else if (props.Region === "AS") {
-      setRegionColor({ background: "#5e3e49", txt: "#af7f91" });
+      setRegionColor({ txt: "var(--as-border-left-color)" });
     } else if (props.Region === "SA") {
-      setRegionColor({ background: "darkcyan", txt: "#5dccdc" });
+      setRegionColor({ txt: "var(--sa-border-left-color)" });
     } else if (props.Region === "ME") {
-      setRegionColor({ background: "#4d4525", txt: "#e5d386" });
+      setRegionColor({ txt: "var(--me-border-left-color)" });
     } else if (props.Region === "AU") {
-      setRegionColor({ background: "#392e27", txt: "#d5ad80" });
+      setRegionColor({ txt: "var(--au-border-left-color)" });
     } else if (props.Region === "AF") {
-      setRegionColor({ background: "#5e3e49", txt: "#af7f91" });
+      setRegionColor({ txt: "var(--af-border-left-color)" });
     }
   }, [props.high, props.Region]); // Add dependencies to useEffect
 
@@ -33,7 +34,7 @@ export default function TierElement(props) {
     setIsHovered(false);
   };
 
-  const backgroundColor = isHovered ? '#313a49' : tiercolor; // Example hover color
+  const backgroundColor = isHovered ? 'var(--tier-bk-hover-color)' : tiercolor; // Example hover color
 
   return (
     <>
@@ -41,7 +42,7 @@ export default function TierElement(props) {
         className="tierElement"
         style={{
           backgroundColor: backgroundColor, // Use the dynamic background color
-          borderLeftColor: regioncolour.background ? `${regioncolour.txt}` : "", // Corrected borderLeft
+          borderLeftColor: regioncolour.txt ? `${regioncolour.txt}` : "", // Corrected borderLeft
         }}
         onClick={() => {
           props.displayStatsFunc(props.txt);

@@ -2,16 +2,13 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: white;
-
     top: 0;
     left: 0;
-    background-color: rgba(10, 10, 10, 0.9);
-    
-
+    background-color: var(--blocker-bk-color);
 }
 .PreviewProfileImg{
     width: 120px;
+    height: 120px;
     filter: drop-shadow(-2px 2px 20px rgba(255, 255, 255, 0.3)); /* Initial drop shadow */
     mask-repeat: no-repeat; /* Ensure the mask doesn't repeat */
     mask-size: 100% 100%; /* Make the mask cover the entire element */
@@ -24,11 +21,22 @@
     margin-top: 40px;
 }
 .PreviewPlayerName{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-family);
     font-weight: bold;
     font-size: 45px;
     margin-left: 20px;
-    color:white;
+    color: var(--main-font-color);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.PreviewPlayerPerk{
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 0px;
+    margin-left: 20px;
+    height: 10px;
+    color: var(--main-font-color);
 }
 .PreviewStatsGridConOverAll{
     display: grid;
@@ -47,16 +55,16 @@
     margin-top: 20px;
 }
 .PreviewValCon{
-    color:white;
+    color: var(--main-font-color);
     margin-left: 20px;
     width: 180px;
     height: 150px;
-    background-color: rgba(20, 20, 20, 1);
-    border-color: #efefef;
+    background-color: var(--overlay-bk-color);
+    border-color: var(--stat-border-color);
     border: solid;
     border-width: 3px;
     box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--main-font-family);
     padding-left: 20px;
     border-radius: 3px;
     margin-top: 20px;
@@ -66,8 +74,8 @@
     margin-top: 15px;
 }
 .PreviewTitle{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
     font-size: 42px;
     margin-left: 30px;
     margin-bottom: 0px;
@@ -78,29 +86,33 @@
     height: 200px;
     margin-left: 20px;
     padding-left: 20px;
-    background-color:  rgba(20, 20, 20, 1);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: solid;
+    background-color: var(--overlay-bk-color);
+    font-family: var(--main-font-family);
+    border: solid var(--stat-border-color);
     border-width: 3px;
     box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 20px;
     border-radius: 3px;
-    color: white;
+    color: var(--main-font-color);
     margin-top: 20px;
 }
 .PreviewTierValTitle{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
     font-size: 40px;
     margin-bottom: 0px;
     margin-top: 15px;
     width: 170px;
 }
 .PreviewTierVal{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
     font-size: 32px;
     margin-top: 3px;
     margin-bottom: 0px;
+}
+.NoMatches{
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
 }
 @media (max-width : 1250px) {
     .PreviewTierStatsGridConOverAll{
@@ -120,41 +132,6 @@
     .PreviewStatsGridConOverAll{
         grid-template-columns: 1fr 1fr;
         width: 450px;
-    }
-    .MatchResultImg{
-        width: 50px;
-    }
-    .MatchResultPlayerName{
-        font-size: 20px;
-    }
-    .MatchResultGmImg{
-        width: 50px;
-    }
-    .MatchResultScore{
-        font-size: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-@media (max-width : 570px) {
-    .MatchResultImg{
-        width: 40px;
-    }
-    .MatchResultPlayerName{
-        font-size: 17px;
-    }
-    .MatchResultGmImg{
-        width: 40px;
-    }
-    .MatchResultScore{
-        font-size: 17px;
-
-    }
-    .MatchResultCon{
-        height: 50%;
-    }
-    .MatchHistory{
-        height: 90px;
     }
 }
 @media (max-width : 750px) {
@@ -188,6 +165,13 @@
         width: 480px;
         grid-template-columns: 1fr 1fr 1fr;
 
+    }
+    .PreviewPlayerName{
+        font-size: 30px;
+    }
+    .PreviewProfileImg{
+        width: 70px;
+        height: 70px;
     }
     .PreviewValTitle{
         font-size: 32px;
@@ -233,23 +217,6 @@
         width: 340px;
         grid-template-columns:  1fr 1fr;
 
-    }
-    .MatchResultImg{
-        width: 32px;
-    }
-    .MatchResultPlayerName{
-        font-size: 15px;
-    }
-    .MatchResultGmImg{
-        width: 32px;
-    }
-    .MatchResultScore{
-        font-size: 15px;
-
-    }
-
-    .MatchHistory{
-        height: 90px;
     }
 }
 @media (max-width : 380px) {

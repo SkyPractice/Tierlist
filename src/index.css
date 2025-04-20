@@ -1,3 +1,73 @@
+/* Variables */
+:root{
+
+  --main-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --title-font-family: "Geist", sans-serif;
+
+  --main-font-color: white;
+
+  --search-input-border-color: lightgray;
+  --title-font-weight: 1000;
+
+  --stat-border-color: #efefef;
+
+  --main-bk-color: rgb(10, 10, 10);
+  --overlay-bk-color: rgb(20, 20, 20); /* header and sidebar and Statistics Containers */
+  --overall-tier-bk-color: rgba(20, 20, 20, 0.9);
+  --overall-tier-bk-hover-color: rgb(25, 25, 25);
+  --overall-gm-tier-bk-color: rgb(15, 15, 15);
+  --overall-gm-tier-con-bk-color: black;
+  --tier-element-bk-color: rgb(15, 15, 15);
+
+  --first-overall-bk-color: rgba(227, 164, 16, 0.7);
+  --second-overall-bk-color: rgba(192 , 192 , 192 , 0.7);
+  --third-overall-bk-color: rgba(184, 115, 51, 0.7);
+
+  --first-overall-border: solid rgb(212, 160, 23);
+  --second-overall-border: solid silver;
+  --third-overall-border: solid rgb(184, 115, 51);
+
+  --blocker-bk-color: rgba(10, 10, 10, 0.9);
+
+  /* Match History Flags */
+  --winner-flag-bk-color: #198754;
+  --loser-flag-bk-color: rgb(192, 57, 43);
+  --flag-bk-color: rgba(40, 40, 40);
+
+  /* TierTable Region Border Left Color */
+  --eu-border-left-color: lightgreen;
+  --na-border-left-color: #d95c6a;
+  --as-border-left-color: #af7f91;
+  --sa-border-left-color: #5dccdc;
+  --me-border-left-color: #e5d386;
+  --au-border-left-color: #d5ad80;
+  --af-border-left-color: #af7f91;
+
+  /* OverAll ( LeaderBoard ) Region Colors */
+  --eu-bk-color: green;
+  --na-bk-color: #442228;
+  --as-bk-color: #5e3e49;
+  --sa-bk-color: darkcyan;
+  --me-bk-color: #4d4525;
+  --au-bk-color: #392e27;
+  --af-bk-color: #5e3e49;
+
+  --eu-txt-color: lightgreen;
+  --na-txt-color: #d95c6a;
+  --as-txt-color: #af7f91;
+  --sa-txt-color: #5dccdc;
+  --me-txt-color: #e5d386;
+  --au-txt-color: #d5ad80;
+  --af-txt-color: #af7f91;
+
+  --tier-bk-hover-color: #313a49;
+
+  --tier-bk-color-ht: rgb(22, 22, 22);
+  --tier-bk-color-lt: rgb(15, 15, 15);
+
+  --inventory-slot-bk-color: rgb(25, 25, 25);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -17,8 +87,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(25, 25, 25);
 }
+
 body {
-  background-color: rgb(10, 10, 10);
+  background-color: var(--main-bk-color);
   margin: 0px;
   overflow-x: hidden;
 }

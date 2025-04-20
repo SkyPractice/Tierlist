@@ -2,7 +2,7 @@
 .MatchHistory{
     width: 97%;
     height: 130px;
-    background-color: rgb(25 , 25 , 25);
+    background-color: rgb(25 , 25 , 25); /* Deprecated I Guess */
     margin-top: 0px;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -39,11 +39,12 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+/* Match History Flag */
 .MatchResultmhm{
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: fit-content;
-    background-color: rgba(40, 40, 40);
+    background-color: var(--flag-bk-color);
     height: 20px;
     line-height: 20px;
     text-align: center;
@@ -55,3 +56,60 @@
 }
 
 /* Responsive @media Queries Available in TierPreview.css too lazy to copy */
+@media (max-width : 980px) {
+    .MatchResultImg{
+        width: 50px;
+    }
+    .MatchResultPlayerName{
+        font-size: 20px;
+    }
+    .MatchResultGmImg{
+        width: 50px;
+    }
+    .MatchResultScore{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width : 570px) {
+    .MatchResultImg{
+        width: 40px;
+    }
+    .MatchResultPlayerName{
+        font-size: 17px;
+    }
+    .MatchResultGmImg{
+        width: 40px;
+    }
+    .MatchResultScore{
+        font-size: 17px;
+
+    }
+    .MatchResultCon{
+        height: 50%;
+    }
+    .MatchHistory{
+        height: 90px;
+    }
+}
+@media (max-width : 500px) {
+    
+    .MatchResultImg{
+        width: 32px;
+    }
+    .MatchResultPlayerName{
+        font-size: 15px;
+    }
+    .MatchResultGmImg{
+        width: 32px;
+    }
+    .MatchResultScore{
+        font-size: 15px;
+
+    }
+
+    .MatchHistory{
+        height: 90px;
+    }
+}

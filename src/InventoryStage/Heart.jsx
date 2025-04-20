@@ -16,9 +16,9 @@ export const Hearts = (props) => {
         (Math.floor(props.num) % 2 >= 1) && <img src={halfHeartImg} className="HeartImg"></img>
     }
     {
-        Array(Math.floor((20 - props.num) / 2)).fill(null).map(
+        Array((Math.floor(props.num) % 2 >= 1) ? Math.floor((20 - props.num) / 2) : Math.ceil((20 - props.num) / 2)).fill(null).map(
             (_, index) =>
-                <img src={emptyHeartImg} className="HeartImg"></img>)
+                <img key={index} src={emptyHeartImg} className="HeartImg"></img>)
        
     }
  </div>
