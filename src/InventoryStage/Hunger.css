@@ -1,0 +1,16 @@
+.HungerImg{
+    width: 100px;
+    box-sizing: border-box;
+}
+.HungerImgCon{
+    width: 35px;
+    height: 60px;
+}
+.EmptyHungerImg{
+    width: 70px;
+}
+.hungers{
+    display: flex;
+    margin-left: -17px;
+    
+}

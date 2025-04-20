@@ -13,7 +13,7 @@ export const Hearts = (props) => {
     )
     }
     {
-        (Math.floor(props.num) % 2 == 1) && <img src={halfHeartImg} className="HeartImg"></img>
+        (Math.floor(props.num) % 2 >= 1) && <img src={halfHeartImg} className="HeartImg"></img>
     }
     {
         Array(Math.floor((20 - props.num) / 2)).fill(null).map(

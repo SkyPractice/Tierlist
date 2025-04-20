@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getRomanianChar, getDuraPercentage } from "../UseFulFunctions/Functions";
 import { Hearts } from "./Heart";
+import { Hungers } from "./Hunger";
 import "./Inventories.css"
 
 
@@ -10,6 +11,9 @@ const InventoryItemDetails = (props) => {
         {props.itemEnchants && <div className="InventoryItemEnchantmentsCon">
             {props.itemEnchants.map(i => <h1 className="InventoryItemEnchantments">{i.name + " " + (i.level ? getRomanianChar(i.level) : "")}</h1>)}
         </div>}
+        {
+            props.dur && <h2 className="Durability">Durability : {props.dur}</h2>
+        }
         
     </div>
 }
@@ -29,17 +33,10 @@ const InventorySlot = (props) => {
             
         }
         
-        {showName && <InventoryItemDetails itemName={props.itemName} itemEnchants={props.enchantments}></InventoryItemDetails>}
+        {showName && <InventoryItemDetails itemName={props.itemName} itemEnchants={props.enchantments} dur={props.dura}></InventoryItemDetails>}
     </div>
 }
 
-const Hungers = (props) => {
-    return <div className="hungers">{Array(Math.floor(props.num / 2)).fill(null).map(
-        (_, index) =>
-            <img src={heartImg}></img>
-    )
-    }</div>
-}
 export default function Inventories(props) {
     return <>
         <h1 className="InventoryTitle">Inventories</h1>
@@ -52,9 +49,12 @@ export default function Inventories(props) {
                     <h1 className="InventoryPlayerName">{props.Inven.IGN}</h1>
                 </div>
                 <div className="hpAndHunger">
-                    { 
+                    
                         <Hearts num={props.Inven.IGN == props.Inven.player1_name ?
-                        props.Inven.player1_stats.health : props.Inven.player2_stats.health}></Hearts>}
+                        props.Inven.player1_stats.health : props.Inven.player2_stats.health}></Hearts>
+                        <Hungers num={props.Inven.IGN == props.Inven.player1_name ?
+                            props.Inven.player1_stats.hunger : props.Inven.player2_stats.hunger}></Hungers>
+                    
 
                 </div>
                 <div className="Inventory">
@@ -62,6 +62,7 @@ export default function Inventories(props) {
                         props.Inven.player1_inventory.map(item => <InventorySlot enchantments={item.enchants} itemName={item.type} amount={item.amount} dura={item.durability}></InventorySlot>)}
                 </div>
             </div>
+            <h1 className="vs">VS</h1>
             <div className="BigInvenCon">
 
                 <div className="InventoryPlayer">
@@ -71,6 +72,8 @@ export default function Inventories(props) {
                 <div className="hpAndHunger">
                     <Hearts num={props.Inven.IGN != props.Inven.player1_name ?
                         props.Inven.player1_stats.health : props.Inven.player2_stats.health}></Hearts>
+                    <Hungers num={props.Inven.IGN != props.Inven.player1_name ?
+                        props.Inven.player1_stats.hunger : props.Inven.player2_stats.hunger}></Hungers>
                 </div>
                 <div className="Inventory">
                     {props.Inven.IGN == props.Inven.player1_name ? props.Inven.player2_inventory.map(item => <InventorySlot enchantments={item.enchants} itemName={item.type} amount={item.amount}  dura={item.durability}></InventorySlot>) :
